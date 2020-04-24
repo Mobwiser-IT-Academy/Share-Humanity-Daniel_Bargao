@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
+
+body {
+  font-family: 'Montserrat', 'Times New Roman', Times, serif;
+}
+
+ul{
+  text-align: left;
+}
+
+.container {
+  text-align: center;
+}
+
+.logo {
+  width: 100px;
+  border-radius: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
