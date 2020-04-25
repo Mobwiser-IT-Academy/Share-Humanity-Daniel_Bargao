@@ -23,7 +23,7 @@ header {
 }
 
 .global {
-  width: 85%;
+  width: 50%;
   border-radius: 40%;
 }
 
@@ -35,27 +35,30 @@ h1{
   font-size: 20px;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns:  repeat(5, auto);
-  grid-template-rows: repeat(5, auto);
-  margin: 5em .5em 1em .5em;
-  text-align: center;
-  vertical-align: middle;
+.flex-grid {
+  margin: 5em 1em 5em 1em;
   overflow-x: scroll;
 }
 
-.grid-title {
-  background-color: rgb(206, 206, 206);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
-  font-size: 15px;
-  font-weight: bold;
+.flex-grid div {
+  display: flex;
+  flex-direction: row;
+  
 }
 
-.grid-item {
-  background-color: rgb(255, 255, 255);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
-  font-size: 15px;
+
+.grid-titles div, .grid-covid div, .grid-shortage div, .grid-mental div, .grid-pollution div {
+  border: 1px black solid;
+  padding: 10px;
+  flex-basis: 20%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.grid-titles {
+  background-color: rgb(206, 206, 206);
+  font-size: 20px;
+  font-weight: bold;
 }
