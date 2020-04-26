@@ -47,7 +47,7 @@ h1{
 }
 
 
-.grid-titles div, .grid-covid div, .grid-shortage div, .grid-mental div, .grid-pollution div {
+.grid-titles div, .grid-titles2 div, .grid-titles3 div, .grid-titles4 div, .grid-covid div, .grid-shortage div, .grid-mental div, .grid-pollution div {
   border: 1px black solid;
   padding: 10px;
   flex-basis: 20%;
@@ -57,8 +57,20 @@ h1{
 
 }
 
-.grid-titles {
+.grid-titles, .grid-titles2, .grid-titles3, .grid-titles4 {
   background-color: rgb(206, 206, 206);
   font-size: 20px;
   font-weight: bold;
+}
+ /* multiple grid idea
+.hide-desktop {
+  display: none;
+}
+*/
+@media only screen and (max-width: 780px) {
+
+  .flex-grid div {
+    display: flex;
+    flex-direction: column;
+  }  
 }

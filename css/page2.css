@@ -6,6 +6,11 @@ body {
 
 ul{
   text-align: left;
+  list-style-type: none;
+
+}
+li {
+  margin: 10em;
 }
 
 .container {
@@ -20,4 +25,36 @@ ul{
 header {
   display: flex;
   justify-content: space-between;
+}
+
+.coronavirus {
+  float: right;
+  width: 40%;
+  margin: 0 1em 0 0;
+  padding: 1em;
+  border: 1px solid black;
+}
+
+.shortage {
+  float: right;
+  width: 40%;
+  margin: 0 1em 0 0;
+  padding: 1em;
+  border: 1px solid black;
+}
+
+.mental_health {
+  float: right;
+  width: 40%;
+  margin: 0 1em 0 0;
+  padding: 1em;
+  border: 1px solid black;
+}
+
+.pollution {
+  float: right;
+  width: 40%;
+  margin: 0 1em 0 0;
+  padding: 1em;
+  border: 1px solid black;
 }
