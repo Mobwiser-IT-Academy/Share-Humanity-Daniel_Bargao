@@ -35,15 +35,17 @@ h1{
   font-size: 20px;
 }
 
+.hide-desktop {
+  display: none;
+}
+ 
 .flex-grid {
   margin: 5em 1em 5em 1em;
-  overflow-x: scroll;
 }
 
 .flex-grid div {
   display: flex;
   flex-direction: row;
-  
 }
 
 
@@ -62,15 +64,49 @@ h1{
   font-size: 20px;
   font-weight: bold;
 }
- /* multiple grid idea
-.hide-desktop {
-  display: none;
-}
-*/
-@media only screen and (max-width: 780px) {
 
+.view_details {
+width: 150px;
+}
+
+
+
+@media only screen and (max-width: 925px) {
+
+  .flex-grid{
+    margin: -0.5em;
+    display: flex;
+   /* overflow-x: scroll;*/
+  }
   .flex-grid div {
     display: flex;
-    flex-direction: column;
+    flex-flow: column;
   }  
+
+  .show-mobile {
+    display: block;
+  }
+
+  .flex-container {
+    margin: 0 0 5em;
+  }
+
+  .grid-titles, .grid-titles2, .grid-titles3, .grid-titles4 {
+    font-size: 16px;
+    height: calc(100vh - 200px);
+  }
+
+  .grid-titles div .grid-covid div, .grid-shortage div, .grid-mental div, .grid-pollution div {
+    font-size: 13px;
+  }
+
+  .multiple-grids {
+    margin: 0 -2.5em 0;
+    width: 30%;
+  }
+
+  .grid-titles{
+    width: 30%;
+  }
+
 }

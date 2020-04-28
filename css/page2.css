@@ -5,16 +5,10 @@ body {
 }
 
 ul{
-  text-align: left;
   list-style-type: none;
-
 }
 li {
-  margin: 10em;
-}
-
-.container {
-  text-align: center;
+  margin: 0 10em 7em;
 }
 
 .logo {
@@ -57,4 +51,100 @@ header {
   margin: 0 1em 0 0;
   padding: 1em;
   border: 1px solid black;
+}
+
+
+.go_back {
+  width: 100px;
+  margin-top: -5em;
+}
+
+@media only screen and (max-width: 925px) {
+  .logo{
+    width: 80px;
+  }
+
+  li {
+    margin: 0 1em 5em 0;
+  }
+
+  .flex-container {
+    margin-left: -2em;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .coronavirus {
+    float: none;
+    width: 80%;
+    margin-left: 10%;
+    padding: 0.2em;
+    border: 1px solid black;
+  }
+  
+  .shortage {
+    float: none;
+    width: 80%;
+    margin-left: 10%;
+    padding: 0.2em;
+    border: 1px solid black;
+  }
+  
+  .mental_health {
+    float: none;
+    width: 80%;
+    margin-left: 10%;
+    padding: 0.2em;
+    border: 1px solid black;
+  }
+  
+  .pollution {
+    float: none;
+    width: 80%;
+    margin-left: 10%;
+    padding: 0.2em;
+    border: 1px solid black;
+  }
+
+  .go_back {
+    width: 80px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+
+
+  .coronavirus {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    padding: 0.2em;
+    border: 1px solid black;
+  }
+  
+  .shortage {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    padding: 0.2em;
+    border: 1px solid black;
+  }
+  
+  .mental_health {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    padding: 0.2em;
+    border: 1px solid black;
+  }
+  
+  .pollution {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    padding: 0.2em;
+    border: 1px solid black;
+  }
 }
