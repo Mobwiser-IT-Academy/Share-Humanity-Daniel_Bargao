@@ -75,8 +75,11 @@ width: 150px;
 
   .flex-grid{
     margin: -0.5em;
+    /* grid com scroll
     display: flex;
-   /* overflow-x: scroll;*/
+    overflow-x: scroll;
+    */
+  
   }
   .flex-grid div {
     display: flex;
@@ -93,20 +96,13 @@ width: 150px;
 
   .grid-titles, .grid-titles2, .grid-titles3, .grid-titles4 {
     font-size: 16px;
-    height: calc(100vh - 200px);
+    height: calc(50vh - 100px);
   }
 
-  .grid-titles div .grid-covid div, .grid-shortage div, .grid-mental div, .grid-pollution div {
+  .grid-covid , .grid-shortage , .grid-mental , .grid-pollution  {
     font-size: 13px;
-  }
+    height: calc(50vh - 100px);
 
-  .multiple-grids {
-    margin: 0 -2.5em 0;
-    width: 30%;
-  }
-
-  .grid-titles{
-    width: 30%;
   }
 
 }
