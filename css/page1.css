@@ -116,27 +116,45 @@ width: 150px;
   .grid-covid , .grid-shortage , .grid-mental , .grid-pollution  {
     font-size: 16px;
     height: calc(50vh - 100px);
+    padding-top: 10em;
     padding-bottom: 60px;
     margin-left: 2.5%;
     margin-right: 2.5%;
     margin-bottom: 100px;
     border: none;
-    border-radius: 5em;
+    border-radius: 3mm;
   }
 
   .grid-covid {
-    background-image: url('/images/coronavirus-2.jpg'); 
-    background-size: cover; 
+    /*
+    background-image: url('/images/coronavirus-2-2.jpg'); 
+    background-size: cover;
+    */
+    background-position-y: -16em;
+    background-repeat: no-repeat;
+  }
+
+  .grid-covid1 {
+    background-image: url('/images/coronavirus-2-2.jpg'); 
+    background-size: cover;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 2em;
   }
 
   .grid-shortage {
-    background-image: url('/images/Shortage_of_goods-2.jpg');
-    background-size: cover; 
+    background-image: url('/images/Shortage_of_goods-2-2.jpg');
+    background-size: cover;
+    background-position-y: -18em;
+    background-repeat: no-repeat;
   }
 
   .grid-mental {
     background-image: url('/images/mental_health-2.jpg.png');
     background-size: cover; 
+    background-size: cover;
+    background-position-y: -18em;
+    background-repeat: no-repeat;
   }
 
   .grid-pollution {
