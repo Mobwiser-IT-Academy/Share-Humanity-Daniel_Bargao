@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
+
+body {
+  font-family: 'Montserrat', 'Times New Roman', Times, serif;
+  background-color: white;
+}
+
+ul{
+  text-align: left;
+}
+
+.container {
+  text-align: center;
+}
+
+.logo {
+  width: 100px;
+  border-radius: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.global {
+  width: 50%;
+  border-radius: 40%;
+}
+
+h1{
+  font-size: 30px;
+}
+
+.subhead{
+  font-size: 20px;
+}
+
+.hide-desktop {
+  display: none;
+}
+ 
+.flex-grid {
+  margin: 5em 1em 5em 1em;
+}
+
+.flex-grid div {
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.grid-titles, .grid-covid, .grid-shortage, .grid-mental, .grid-pollution {
+border-bottom: 1px solid #29343d;
+border-top:  1px solid #29343d;
+border-radius: 3mm;
+margin-bottom: 1em;
+}
+.grid-titles div, .grid-covid div, .grid-shortage div, .grid-mental div, .grid-pollution div {
+  padding: 10px;
+  flex-basis: 20%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-titles {
+  background-image: linear-gradient(45deg, #cccccc 0%, #636363 60%);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.view_details {
+width: 150px;
+}
+
+.hide-mobile {
+  display: none;
+}
+
+
+@media only screen and (max-width: 925px) {
+
+  .global{
+    width: 70%;
+  }
+  .flex-grid{
+    margin: -0.5em; 
+  }
+  .flex-grid div {
+    display: flex;
+    flex-flow: column;
+  }  
+
+  .show-mobile {
+    display: block;
+  }
+
+  .hide-mobile {
+    display: none;
+  }
+
+  .flex-container {
+    margin: 0 0 5em;
+  }
+
+  .grid-titles div {
+    display: none;
+
+  }
+
+  .grid-titles {
+    border: none;
+  }
+
+  .grid-covid , .grid-shortage , .grid-mental , .grid-pollution  {
+    font-size: 16px;
+    height: calc(50vh - 100px);
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-bottom: 300px;
+    border: none;
+    border-radius: 3mm;
+  }
+
+  .grid-covid1 {
+    background-image: url('/images/coronavirus-2-2.jpg'); 
+    background-size: cover;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 1em;
+    line-height: 5em;
+  }
+
+  .grid-shortage1 {
+    background-image: url('/images/Shortage_of_goods-2-2.jpg');
+    background-size: cover;
+    background-position: center;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 1em;
+    line-height: 5em;
+  }
+
+  .grid-mental1 {
+    background-image: url('/images/mental_health-2.jpg.png');
+    background-size: cover;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 1em;
+    line-height: 5em;
+  }
+
+  .grid-pollution1 {
+    background-image: url('/images/pollution-2.jpg');
+    background-size: cover;
+    background-position: center;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 1em;
+    line-height: 5em; 
+  }
+
+  span {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+}
+
+@media only screen and (max-width: 550px) {
+
+  .global{
+    width: 100%;
+  }
+
+}
+
+@media only screen and (max-width: 350px) {
+
+  .grid-covid1 {
+    font-size: 25px;
+  }
+
+  .grid-shortage1 {
+    font-size: 25px;
+  }
+
+  .grid-mental1 {
+    font-size: 25px;
+  }
+
+  .grid-pollution1 {
+    font-size: 25px;
+  }
+}
