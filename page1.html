@@ -23,16 +23,17 @@
 
   <div class="flex-container">
     <div class="container">
-      <ul class="hide-desktop show-mobile">
-        <li><a href="page1.html#Covid-19">Covid-19</a></li>
-        <li><a href="page1.html#Shortage-of-Goods">Shortage of goods</a></li>
-        <li><a href="page1.html#Mental-Health">Mental Health</a></li>
-        <li><a href="page1.html#Pollution">Pollution</a></li>
+      <input type="text" id="myInput" onkeyup="searchFilter()" placeholder="Search for issues..." title="Type in a name of a Humanitarian Issue">
+      <ul id="myUL">
+        <li><a href="page1.html#covid" onclick="showFuntion()">Covid-19</a></li>
+        <li><a href="page1.html#shortage" onclick="showFuntion()">Shortage of goods</a></li>
+        <li><a href="page1.html#mental" onclick="showFuntion()">Mental Health</a></li>
+        <li><a href="page1.html#pollution" onclick="showFuntion()">Pollution</a></li>
       </ul>
     </div>
   </div>
 
-  <div class="flex-grid">
+  <div class="flex-grid" id="flex-grid">
     <div class="grid-titles">
       <div class="grid-title1">Issues</div>
       <div class="grid-title2">Number of Afected People</div>

@@ -9,6 +9,7 @@ ul{
   text-align: left;
 }
 
+
 .container {
   text-align: center;
 }
@@ -39,24 +40,63 @@ h1{
 .hide-desktop {
   display: none;
 }
+
+#myInput {
+  display: inline-flex;
+  background-image: url('/images/search\ icon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  background-size: 25px;
+  font-size: 20px;
+  padding: 12px 40px 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 12px; 
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-top: -1px;
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block;
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
  
 .flex-grid {
   margin: 5em 1em 5em 1em;
 }
 
-.flex-grid div {
-  display: flex;
+.flex-grid div{
   flex-direction: row;
-  
 }
 
-.grid-titles, .grid-covid, .grid-shortage, .grid-mental, .grid-pollution {
+.grid-titles, .grid-covid, .grid-shortage, .grid-mental, .grid-pollution, .grid-items{
+display: flex;
+padding: 10px;
+flex-basis: 20%;
+text-align: center;
+align-items: center;
+justify-content: center;
 border-bottom: 1px solid #29343d;
 border-top:  1px solid #29343d;
 border-radius: 3mm;
 margin-bottom: 1em;
 }
-.grid-titles div, .grid-covid div, .grid-shortage div, .grid-mental div, .grid-pollution div {
+.grid-titles div, .grid-covid div, .grid-shortage div, .grid-mental div, .grid-pollution div, .grid-items div {
   padding: 10px;
   flex-basis: 20%;
   text-align: center;
@@ -78,12 +118,17 @@ width: 150px;
   display: none;
 }
 
+.grid-items{
+  display: none;
+}
+
 
 @media only screen and (max-width: 925px) {
 
   .global{
     width: 70%;
   }
+  
   .flex-grid{
     margin: -0.5em; 
   }
@@ -106,14 +151,13 @@ width: 150px;
 
   .grid-titles div {
     display: none;
-
   }
 
   .grid-titles {
     border: none;
   }
 
-  .grid-covid , .grid-shortage , .grid-mental , .grid-pollution  {
+  .grid-covid , .grid-shortage , .grid-mental , .grid-pollution, .grid-items{
     font-size: 16px;
     height: calc(50vh - 100px);
     margin-left: 2.5%;
