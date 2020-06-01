@@ -116,10 +116,6 @@ width: 150px;
   display: none;
 }
 
-.grid-items{
-  display: none;
-}
-
 
 @media only screen and (max-width: 925px) {
 

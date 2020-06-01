@@ -36,8 +36,19 @@ const gridItems = [
 
 const grid = document.querySelector("#flex-grid");
 
-for (let i = 0; i < gridItems.length; i++) {
-    grid.innerHTML += `<div id="grid-items" class="grid-items">
+generateList();
+function searchFilter(){
+  let input, filter;
+  input = document.getElementById('myInput');
+  filter = input.value.toUpperCase();
+  options = gridItems.Issues.value.toUpperCase();
+  generateList(input);
+}
+
+function generateList(searchFilter) {
+  for (let i = 0; i < gridItems.length; i++) {
+    if (!searchFilter || options.includes(filter)) {
+      grid.innerHTML += `<div id="grid-items" class="grid-items">
      <div class="grid-${gridItems[i].id}1" id="${gridItems[i].id}">${gridItems[i].Issues}</div>
      <div>${gridItems[i].NumberOfAfectedPeople}</div>
      <div>${gridItems[i].PriorityRank}</div>
@@ -45,27 +56,32 @@ for (let i = 0; i < gridItems.length; i++) {
      <div><a href="page2.html#${gridItems[i].id}-2"><img src="images/view_details2-2.jpg.png"
      alt="view_details" class="view_details"></div>
    </div>`;
+    }
+  }
 }
 
-function searchFilter() {
-  let input, filter, ul, li, a, i, txtValue;
+/*function searchFilter() {
+  let input, filter, ul, li, a, i, txtValue, x;
   input = document.getElementById('myInput');
   filter = input.value.toUpperCase();
   ul = document.getElementById("myUL");
   li = ul.getElementsByTagName('li');
+  x = document.getElementById("grid-items");
 
   for (i = 0; i < li.length; i++) {
     a = li[i].getElementsByTagName("a")[0];
     txtValue = a.textContent || a.innerText;
     if (txtValue.toUpperCase().indexOf(filter) > -1) {
       li[i].style.display = "";
+      x.style.display = "none";
     } else {
       li[i].style.display = "none";
+      x.style.display = "flex";
     }
   }
 }
 
-function showFuntion(){
+function showFunction() {
 
   let x = document.getElementById("grid-items");
   if (x.style.display === "flex") {
@@ -76,4 +92,4 @@ function showFuntion(){
 
 }
 
-console.log(grid)
+console.log(grid)*/
