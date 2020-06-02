@@ -37,17 +37,16 @@ const gridItems = [
 const grid = document.querySelector("#flex-grid");
 
 generateList();
-function searchFilter(){
+function searchFilter() {
   let input, filter;
   input = document.getElementById('myInput');
-  filter = input.value.toUpperCase();
-  options = gridItems.Issues.value.toUpperCase();
   generateList(input);
 }
 
 function generateList(searchFilter) {
   for (let i = 0; i < gridItems.length; i++) {
-    if (!searchFilter || options.includes(filter)) {
+    if (!searchFilter || gridItems[i].Issues.toUpperCase().includes(searchFilter.value.toUpperCase())) {
+      grid.innerHTML = ``
       grid.innerHTML += `<div id="grid-items" class="grid-items">
      <div class="grid-${gridItems[i].id}1" id="${gridItems[i].id}">${gridItems[i].Issues}</div>
      <div>${gridItems[i].NumberOfAfectedPeople}</div>
@@ -57,6 +56,7 @@ function generateList(searchFilter) {
      alt="view_details" class="view_details"></div>
    </div>`;
     }
+    
   }
 }
 
