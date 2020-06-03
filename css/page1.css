@@ -53,28 +53,6 @@ h1{
   border-radius: 5px;
   margin-bottom: 12px; 
 }
-
-#myUL {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-#myUL li a {
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  margin-top: -1px;
-  background-color: #f6f6f6;
-  padding: 12px;
-  text-decoration: none;
-  font-size: 18px;
-  color: black;
-  display: block;
-}
-
-#myUL li a:hover:not(.header) {
-  background-color: #eee;
-}
  
 .flex-grid {
   margin: 5em 1em 5em 1em;
@@ -84,7 +62,7 @@ h1{
   flex-direction: row;
 }
 
-.grid-titles, .grid-covid, .grid-shortage, .grid-mental, .grid-pollution, .grid-items{
+.grid-titles, .grid-items{
 display: flex;
 text-align: center;
 align-items: center;
@@ -94,7 +72,7 @@ border-top:  1px solid #29343d;
 border-radius: 3mm;
 margin-bottom: 1em;
 }
-.grid-titles div, .grid-covid div, .grid-shortage div, .grid-mental div, .grid-pollution div, .grid-items div {
+.grid-titles div, .grid-items div {
   padding: 10px;
   flex-basis: 20%;
   text-align: center;
@@ -151,7 +129,7 @@ width: 150px;
     border: none;
   }
 
-  .grid-covid , .grid-shortage , .grid-mental , .grid-pollution, .grid-items{
+  .grid-items{
     font-size: 16px;
     height: calc(50vh - 100px);
     margin-left: 2.5%;

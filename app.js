@@ -44,9 +44,17 @@ function searchFilter() {
 }
 
 function generateList(searchFilter) {
+  grid.innerHTML = `<div class="grid-titles">
+    <div class="grid-title1">Issues</div>
+    <div class="grid-title2">Number of Afected People</div>
+    <div class="grid-title3">Priority Rank</div>
+    <div class="grid-title4">Brief Description</div>
+    <div class="grid-title5"></div>
+  </div>
+</div>`
+
   for (let i = 0; i < gridItems.length; i++) {
     if (!searchFilter || gridItems[i].Issues.toUpperCase().includes(searchFilter.value.toUpperCase())) {
-      grid.innerHTML = ``
       grid.innerHTML += `<div id="grid-items" class="grid-items">
      <div class="grid-${gridItems[i].id}1" id="${gridItems[i].id}">${gridItems[i].Issues}</div>
      <div>${gridItems[i].NumberOfAfectedPeople}</div>
@@ -56,40 +64,5 @@ function generateList(searchFilter) {
      alt="view_details" class="view_details"></div>
    </div>`;
     }
-    
   }
 }
-
-/*function searchFilter() {
-  let input, filter, ul, li, a, i, txtValue, x;
-  input = document.getElementById('myInput');
-  filter = input.value.toUpperCase();
-  ul = document.getElementById("myUL");
-  li = ul.getElementsByTagName('li');
-  x = document.getElementById("grid-items");
-
-  for (i = 0; i < li.length; i++) {
-    a = li[i].getElementsByTagName("a")[0];
-    txtValue = a.textContent || a.innerText;
-    if (txtValue.toUpperCase().indexOf(filter) > -1) {
-      li[i].style.display = "";
-      x.style.display = "none";
-    } else {
-      li[i].style.display = "none";
-      x.style.display = "flex";
-    }
-  }
-}
-
-function showFunction() {
-
-  let x = document.getElementById("grid-items");
-  if (x.style.display === "flex") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "flex";
-  }
-
-}
-
-console.log(grid)*/
