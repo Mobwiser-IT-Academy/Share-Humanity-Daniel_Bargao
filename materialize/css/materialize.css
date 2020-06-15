@@ -1,20 +1,3 @@
-body {
-  background:#ededed;
-}
-.panel {
-  display:block;
-  height:278px;
-}
-
-.freeBird {
-  margin-top:-100px;
-}
-
-.small-text {
-  font-size:12px;
-}
-
-
 /*!
  * Materialize v1.0.0 (http://materializecss.com)
  * Copyright 2014-2017 Materialize
