@@ -789,8 +789,31 @@ const dll_cities = document.getElementById('select_cities');
 generateCityList();
 
 function generateCityList() {
-  dll_cities.innerHTML = `<option value="" disabled selected>Select your Organization City</option>`
-  for (i = 0; i < countryList.states.length; i++) {
-    dll_cities.innerHTML += `<option value="${i}">${countryList[i].states[i]}</option>`
+  var selectedCountry = document.getElementById('select_countries').value;
+  dll_cities.innerHTML = `<option value="" disabled selected>Select your Organization City</option>`;
+  if (selectedCountry) {
+    for (i = 0; i < countryList[selectedCountry].states.length; i++) {
+      dll_cities.innerHTML += `<option value="${i}">${countryList[selectedCountry].states[i]}</option>`;
+    }
+    $('select').formSelect();
   }
+}
+
+const addNewArea = document.getElementById('last_row');
+addAreaOfWork();
+
+function addAreaOfWork() {
+  addNewArea.innerHTML += `<div class="input-field col s4">
+  <i class="material-icons prefix">add_location</i>
+  <input id="latitude" type="text" class="validate">
+  <label for="latitude">Latitude</label>
+</div>
+<div class="input-field col s4">
+  <input id="longitude" type="text" class="validate">
+  <label for="longitude">Longitude</label>
+</div>
+<div class="input-field col s4">
+  <input id="radius" type="number" class="validate">
+  <label for="radius">Radius (km)</label>
+</div>`
 }
