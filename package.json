@@ -1,0 +1,25 @@
+{
+  "name": "sharehumanity",
+  "version": "1.0.0",
+  "description": "My first project on mobwiser",
+  "main": "app.js",
+  "dependencies": {
+    "jquery": "^3.5.1",
+    "materialize": "^1.0.0",
+    "materialize-css": "^1.0.0-rc.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mobwiser-IT-Academy/Share-Humanity-Daniel_Bargao.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mobwiser-IT-Academy/Share-Humanity-Daniel_Bargao/issues"
+  },
+  "homepage": "https://github.com/Mobwiser-IT-Academy/Share-Humanity-Daniel_Bargao#readme"
+}
